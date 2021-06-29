@@ -48,3 +48,13 @@ Complete trace, expanded:
 Span attributes:
 
 ![Span attributes](tracingdemo_complete_span_details.PNG)
+
+```
+$ kubectl apply -f ./runtimeclass_workloads/busybox-pod.yaml
+```
+
+Output:
+
+![k8s](tracing-kubectl.png)
+
+![k8s expanded](tracing-kubectl-expanded.png)
