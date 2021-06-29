@@ -32,3 +32,19 @@ $ docker run -d --name jaeger \
 ```
 $ sudo ctr run --runtime "io.containerd.kata.v2" --rm -t "docker.io/library/busybox:latest" test sh
 ```
+
+Partial trace:
+
+![Partial trace](tracingdemo_incomplete.PNG)
+
+Complete trace, collapsed: 
+
+![Complete trace](tracingdemo_complete.PNG)
+
+Complete trace, expanded:
+
+![Complete trace expanded](tracingdemo_complete_expanded.PNG)
+
+Span attributes:
+
+![Span attributes](tracingdemo_complete_span_details.PNG)
